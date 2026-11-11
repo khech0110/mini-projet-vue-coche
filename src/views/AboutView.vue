@@ -37,18 +37,18 @@ const notions = [
     <div class="card api">
       <h2>D'où viennent les tâches de départ ?</h2>
       <p>
-        Le sujet propose l'API <code>data.economie.gouv.fr/api/v2/catalog/facets</code>. Nous l'avons testée :
+        Le sujet propose l'API <code>data.economie.gouv.fr/api/v2/catalog/facets</code>. Je l'ai testée :
         elle renvoie des catégories du catalogue de données publiques (thèmes, producteurs, années…),
         pas des tâches. L'utiliser ici n'aurait pas eu de sens.
       </p>
       <p>
-        Nous avons donc pris <strong>JSONPlaceholder</strong>, l'exemple cité dans le sujet. C'est une fausse API
+        J'ai donc pris <strong>JSONPlaceholder</strong>, l'exemple cité dans le sujet. C'est une fausse API
         gratuite faite pour s'entraîner. Elle renvoie de vraies tâches (un titre et un état terminé ou non).
         Les titres sont en faux latin, c'est normal.
       </p>
     </div>
 
-    <p class="author">Réalisé par <strong>Cheikh SECK</strong> et <strong>Ivann BENINI</strong> · BTS SIO, 2e année.</p>
+    <p class="author">Réalisé par <strong>Cheikh SECK</strong> · BTS SIO, 2e année.</p>
   </section>
 </template>
 

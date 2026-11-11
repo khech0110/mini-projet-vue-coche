@@ -53,7 +53,7 @@ function logout() {
   </main>
 
   <footer class="site-footer">
-    <div class="container">Coché · Mini-projet Vue.js · BTS SIO · Cheikh SECK &amp; Ivann BENINI</div>
+    <div class="container">Coché · Mini-projet Vue.js · BTS SIO · Cheikh SECK</div>
   </footer>
 </template>
 

@@ -1,8 +1,8 @@
 # Présentation du projet Coché
 
-Document de préparation à l'oral – Cheikh SECK et Ivann BENINI.
+Document de préparation à l'oral – Cheikh SECK.
 
-Le but : comprendre chaque partie du projet et savoir l'expliquer avec nos propres exemples.
+Le but : comprendre chaque partie du projet et savoir l'expliquer avec mes propres exemples.
 
 ---
 
@@ -368,7 +368,7 @@ Non, c'est un confort d'interface. Tout le code est dans le navigateur, on pourr
 Il lit `isLogged` dans le store `auth`. C'est un `computed` qui vaut `true` si un prénom est enregistré. Le prénom est aussi gardé dans le `localStorage` pour rester connecté après un rechargement.
 
 **Pourquoi ne pas avoir utilisé l'API data.economie.gouv.fr ?**
-Nous l'avons testée : elle renvoie des catégories du catalogue de données publiques, pas des tâches. Les afficher comme des tâches aurait été faux. JSONPlaceholder, cité dans le sujet, renvoie de vraies tâches.
+Je l'ai testée : elle renvoie des catégories du catalogue de données publiques, pas des tâches. Les afficher comme des tâches aurait été faux. JSONPlaceholder, cité dans le sujet, renvoie de vraies tâches.
 
 **Que se passe-t-il si l'API ne répond pas ?**
 `fetch` échoue, le `.catch` remplit `error`, et la page affiche un message rouge. L'application reste utilisable : on peut ajouter ses propres tâches. Si l'API répond avec une erreur (404, 500), on la détecte avec `response.ok`.

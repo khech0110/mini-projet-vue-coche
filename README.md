@@ -1,6 +1,6 @@
 # Coché – Mini-projet Vue.js
 
-Projet réalisé par **Cheikh SECK** et **Ivann BENINI**, BTS SIO 2e année, dans le cadre du module « Base du Vue.js » (EPSI, promotion 2026-2027).
+Projet réalisé par **Cheikh SECK**, BTS SIO 2e année, dans le cadre du module « Base du Vue.js » (EPSI, promotion 2026-2027).
 
 Coché est une petite application de gestion de tâches. Elle reprend le mini-projet de fin de cours : des pages avec Vue Router, un store Pinia, des composants qui communiquent avec des props et des événements, un composable qui appelle une API, un guard de navigation et des transitions.
 
@@ -137,9 +137,9 @@ L'adresse de l'API est dans le fichier `.env` (`VITE_API_URL`), comme vu en cour
 
 ### Choix de l'API
 
-Le sujet donne l'adresse `https://data.economie.gouv.fr/api/v2/catalog/facets`. Nous l'avons testée : elle renvoie les « facettes » du catalogue de données publiques du ministère (`features`, `modified`, `publisher`…). Ce sont des catégories de jeux de données, pas des tâches. Faire passer ces données pour des tâches n'aurait pas eu de sens.
+Le sujet donne l'adresse `https://data.economie.gouv.fr/api/v2/catalog/facets`. Je l'ai testée : elle renvoie les « facettes » du catalogue de données publiques du ministère (`features`, `modified`, `publisher`…). Ce sont des catégories de jeux de données, pas des tâches. Faire passer ces données pour des tâches n'aurait pas eu de sens.
 
-Nous avons donc utilisé **JSONPlaceholder** (`https://jsonplaceholder.typicode.com/todos`), aussi cité comme exemple dans le sujet. Cette API renvoie de vraies tâches avec `id`, `title` et `completed`. Nous gardons 6 tâches (`userId=1&_limit=6`). Leurs titres sont en faux latin : c'est normal pour cette API de test.
+J'ai donc utilisé **JSONPlaceholder** (`https://jsonplaceholder.typicode.com/todos`), aussi cité comme exemple dans le sujet. Cette API renvoie de vraies tâches avec `id`, `title` et `completed`. Je garde 6 tâches (`userId=1&_limit=6`). Leurs titres sont en faux latin : c'est normal pour cette API de test.
 
 ## Le guard de navigation
 
@@ -169,7 +169,7 @@ Comme le dit le cours, ce guard est un confort d'interface : la vraie sécurité
 - **`emit` plutôt qu'un accès direct au store dans les composants** : `TodoItem` et `TodoForm` ne connaissent pas Pinia. Ils préviennent la page avec des événements. Ils restent donc simples et réutilisables (« props vers le bas, événements vers le haut »).
 - **`Date.now()` comme identifiant** des nouvelles tâches : simple et unique pour ce projet.
 - **`localStorage`** pour garder les tâches et la connexion après un rechargement.
-- **Vue Router 4** : `create-vue` installe maintenant Vue Router 5. Nous avons installé `vue-router@4` pour respecter le sujet et le cours.
+- **Vue Router 4** : `create-vue` installe maintenant Vue Router 5. J'ai installé `vue-router@4` pour respecter le sujet et le cours.
 - **CSS classique** avec des variables (`--primary`, `--accent`…) dans `main.css` pour garder le même style sur toutes les pages. Pas de framework CSS.
 
 ## Déploiement
